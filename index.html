@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <title>Popcorn Time</title>
+</head>
+<body>
+    <header>
+        <a name="inicio"></a>
+        <div class="encabezado">
+            <div class="logo">                
+                <img src="./images/logo.png" alt="logo" img-fluid>                
+                <h1>POPCORN TIME</h1>                                   
+            </div>
+            <p class="descripcion">Top 100 Greatest Movies of All Time</p>                             
+            <div class="subtitulo">
+                <h6>Movies Store</h6>                
+            </div>
+            <div class="bienvenidoBuscar">
+                <div class="user">
+                    <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                    <label>Bienvenido</label>
+                </div>
+                <div class="buscarCarrito">
+                    <i class="iconoBusqueda fa-solid fa-magnifying-glass fa-beat" id="iconoBusqueda"></i>
+                    <div>
+                        <img id="iconoCarrito" class="iconoCarrito" src="./images/pngegg.png" alt="carrito de compras">
+                        <div id="numero"></div>
+                    </div>                    
+                </div>
+            </div>
+        </div>               
+    </header>
+
+    <div class="buscar2" id="buscar2">
+        <input type="text" id="inputSearch" placeholder="¿Qué título desea buscar?">
+        <button id="searchButton"><strong>Buscar</strong></button>
+    </div>
+
+    <div id="cover-ctn-search"></div>
+
+    <main>
+        <div class="modal-container" id="modal-container">
+            <div class="modal modal-close" id="modal">
+                <p class="close" id="close">x</p>
+                <img src="./images/gracias.JPG" alt="gracias por tu compra">                
+                <div class="modal-textos">
+                    <h3><strong>Tenemos tu pedido!!</strong></h3>
+                    <p><strong>Pronto nos pondremos en contacto!!</p>
+                    <p><strong>Gracias por tu compra!!!!!</strong></p>
+                </div>
+            </div>                
+        </div>
+
+        <div id="container">
+
+        </div>
+    
+    </main>
+
+    <div id="cnt-Compra">        
+        <div class="info-Compra" id="info-Compra">
+            <h2>Carrito</h2>
+            <p class="x" id="x">x</p>
+        </div>        
+
+        <div class="movies-Compra" id="movies-Compra"></div>
+        <div class="total" id="total"></div>
+        <button id="vaciar" class="vaciar">Vaciar Carrito</button>
+        <button id="finalizar" class="finalizar">Finalizar Compra</button>
+    </div>    
+
+    <div id="button-up">
+        <i class="fa-sharp fa-solid fa-chevron-up"></i>
+    </div>
+    
+    <footer>
+        <div class="footer">
+            <h5>Derechos de autor © Gaston Tejada - Proyecto Final Javascript</h5>
+        </div>            
+    </footer>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
