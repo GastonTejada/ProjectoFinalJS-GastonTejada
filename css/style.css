@@ -283,7 +283,8 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  margin-top: -5px;
+  margin-top: -15px;
+  margin-bottom: 15px;
 }
 
 .logoContainerP img{
