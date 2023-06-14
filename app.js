@@ -1,5 +1,32 @@
 localStorage.clear();
 
+//LOGIN
+const usuario            = document.getElementById("usuario");
+const edad               = document.getElementById("edad");
+const botonLogin         = document.getElementById("botonLogin");
+const videoLogin         = document.getElementById("videoLogin");
+const containerPrincipal = document.getElementById("containerPrincipal");
+const formGroup          = document.getElementById("form-group"); 
+const userBienvenido     = document.getElementById('userBienvenido');
+
+botonLogin.addEventListener("click", function(){
+
+    if(edad.value<18){
+        Toastify({
+            text: "Debe ser mayor de 18 años para ingresar",
+            duration: 3000
+            }).showToast();
+            return
+     }else{
+        containerPrincipal.style.visibility = "hidden";
+        videoLogin.style.visibility = "hidden";
+        formGroup.style.visibility = "hidden";
+        
+        userBienvenido.innerText = "Bienvenido "+usuario.value;
+        }    
+})
+
+
 //FUNCIONAMIENTO DE BUSCADOR
 document.getElementById("iconoBusqueda").addEventListener("click", mostrar_buscador);
 document.getElementById("cover-ctn-search").addEventListener("click", ocultar_buscador);
@@ -124,7 +151,7 @@ fetch(url)
             `
     }
 })
-.catch(err => {console.error(err)});
+.catch(err => {window.location="./pages/error.html"});
 
 
 function buscarNombre(){

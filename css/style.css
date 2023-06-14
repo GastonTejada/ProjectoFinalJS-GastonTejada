@@ -81,7 +81,8 @@ header {
 .user{
   display: flex;
   align-items: center;
-  height: 40px;  
+  height: 40px;    
+  width: auto;
 }
 
 .user .icon{
@@ -91,6 +92,7 @@ header {
 
 .user label{
   margin-top: -38px;  
+  width: auto;
 }
 
 .iconoBusqueda{
@@ -259,6 +261,95 @@ body {
 #container div button:active{
   background-color: white;
   color: #0f0c29;
+}
+
+/* CONTAINER PRINCIPAL LOGIN */
+.containerPrincipal{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0f0c29;
+  gap: 60px;
+  z-index: 20;
+}
+
+.logoContainerP{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: -5px;
+}
+
+.logoContainerP img{
+  float: left;
+  width: 180px;
+  font-size: 40px;
+}
+
+.logoContainerP h1{
+  font-family: lobster,sans-serif;
+}
+
+.containerPrincipal video{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.containerPrincipal input{
+  outline: 0;
+  background-color: rgba(0,0,0,0.2);
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.containerPrincipal .boton{
+  font-family: sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: #555355;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #fff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 20px;
+  z-index: 21;
+  background-color: #fff;
+  max-width: 360px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.2); 
+  border-radius: 20px;
+  border: #f0311e 3px solid;
+  margin-top: -85px;
 }
 
 .cnt-Compra{
