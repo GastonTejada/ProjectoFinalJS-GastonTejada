@@ -319,6 +319,12 @@ body {
   border-radius: 10px;
 }
 
+.containerPrincipal input:focus{
+  animation: shake .3s;
+  border: 1px solid #f0311e;
+  outline: none;
+}
+
 .containerPrincipal .boton{
   font-family: sans-serif;
   text-transform: uppercase;
