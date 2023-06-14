@@ -320,9 +320,21 @@ body {
 }
 
 .containerPrincipal input:focus{
-  animation: shake .3s;
+  animation: shake 3s;
   border: 1px solid #f0311e;
   outline: none;
+}
+
+@keyframes shake {
+  25%{
+    transform: translateX(4px);
+  }
+  50%{
+    transform: translateX(-4px);
+  }
+  75%{
+    transform: translateX(4px);
+  }
 }
 
 .containerPrincipal .boton{
