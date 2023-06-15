@@ -124,7 +124,6 @@ header {
   font-size: 10px;
   position: relative;
   top: -50px;
-
   left: 90px;
   z-index: 1;
   display: flex;
@@ -362,10 +361,11 @@ body {
   top: 20px;
   z-index: 21;
   background-color: #fff;
-  max-width: 360px;
+  max-width: 280px;
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.2); 
+  /* box-shadow: 5px 5px 15px gray; */
   border-radius: 20px;
   border: #f0311e 3px solid;
   margin-top: -85px;

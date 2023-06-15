@@ -18,11 +18,15 @@ botonLogin.addEventListener("click", function(){
             }).showToast();
             return
      }else{
-        containerPrincipal.style.visibility = "hidden";
-        videoLogin.style.visibility = "hidden";
-        formGroup.style.visibility = "hidden";
-        
-        userBienvenido.innerText = "Bienvenido "+usuario.value;
+
+        setTimeout(() => {
+            containerPrincipal.style.visibility = "hidden";
+            videoLogin.style.visibility = "hidden";
+            formGroup.style.visibility = "hidden";
+
+            userBienvenido.innerText = "Bienvenido "+usuario.value;            
+        }, 850);
+
         }    
 })
 
